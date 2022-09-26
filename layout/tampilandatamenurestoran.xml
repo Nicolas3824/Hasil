@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="73dp"
+        android:layout_height="83dp"
+        android:layout_margin="20dp"
+        android:id="@+id/dtlimgres"
+        android:src="@drawable/user"></ImageView>
+
+    <TextView
+        android:id="@+id/tvres"
+        android:layout_marginRight="20dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:lines="3"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/dtlimgres"
+        android:text="Restoran"></TextView>
+
+    <Button
+        android:id="@+id/btnres"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tvres"
+        android:textColor="#000000"
+        android:backgroundTint="#E4E1E1"
+        android:onClick="ReservasiRestoran"
+        android:text="Reservasi"></Button>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:layout_marginTop="90dp"
+        android:id="@+id/jenisrestoran"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/dtlimgres"
+        android:text="Family Restoran"></TextView>
+</RelativeLayout>

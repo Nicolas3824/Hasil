@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_menu"
+    tools:context=".MainActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="wrap_content"
+        android:layout_height="1594px"
+        android:id="@+id/swp">
+        <ScrollView
+            android:id="@+id/scrview"
+            android:layout_width="match_parent"
+            android:layout_height="1594px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Reservasi Anda"
+                    android:textSize="20dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/borderlayout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Belom Ada Reservasi"
+                        android:id="@+id/tvreservasi"
+                        android:textSize="20dp"></TextView>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:id="@+id/reservasiberjalan">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Rekomendasi Restoran Untuk Anda"
+                    android:textSize="20dp"></TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rekomendasirestoran"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/borderlayout"
+                    android:orientation="horizontal"></androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Rekomendasi Menu Untuk Anda"
+                    android:textSize="20dp"></TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rekomendasimenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/borderlayout"
+                    android:orientation="horizontal"></androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Cafe"
+                    android:textSize="20dp"></TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/borderlayout"
+                    android:orientation="horizontal"></androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Continental Restaurant"
+                    android:textSize="20dp"></TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/borderlayout"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal">
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="SnackBar"
+                    android:textSize="20dp"></TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/borderlayout"
+                    android:orientation="horizontal">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/swp"
+        android:layout_gravity="bottom">
+        <androidx.cardview.widget.CardView
+            android:layout_width="85dp"
+            android:layout_height="205px">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imghome"
+                    android:layout_width="70dp"
+                    android:layout_height="140px"
+                    android:backgroundTint="@color/white"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/house"></ImageButton>
+                <TextView
+                    android:id="@+id/home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40px"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="5px"
+                    android:layout_below="@id/imghome"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:text="@string/Home" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="200px">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imgsrc"
+                    android:layout_width="60dp"
+                    android:layout_height="138px"
+                    android:backgroundTint="@color/white"
+                    android:onClick="SearchPage"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/search"></ImageButton>
+
+                <TextView
+                    android:id="@+id/src"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40px"
+                    android:layout_marginTop="5px"
+                    android:layout_below="@id/imgsrc"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:text="Search" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="200px">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imgfav"
+                    android:layout_width="65dp"
+                    android:layout_height="135px"
+                    android:src="@drawable/heart"
+                    android:layout_marginTop="1dp"
+                    android:backgroundTint="@color/white"
+                    android:scaleType="centerCrop"
+                    android:onClick="FavoritRestoranPage"></ImageButton>
+                <TextView
+                    android:id="@+id/fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40px"
+                    android:layout_marginTop="5px"
+                    android:layout_below="@id/imgfav"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:text="Favorit" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="200px">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imgres"
+                    android:layout_width="70dp"
+                    android:layout_height="137px"
+                    android:src="@drawable/history"
+                    android:backgroundTint="@color/white"
+                    android:scaleType="centerCrop"
+                    android:onClick="HistoryReservasi"></ImageButton>
+                <TextView
+                    android:id="@+id/res"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40px"
+                    android:layout_marginTop="5px"
+                    android:layout_below="@id/imgres"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:text="Reservation" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="200px"
+            android:layout_marginRight="20px">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imgakun"
+                    android:layout_width="70dp"
+                    android:layout_height="140px"
+                    android:backgroundTint="@color/white"
+                    android:onClick="PageAkun"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user"></ImageButton>
+                <TextView
+                    android:id="@+id/akun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40px"
+                    android:layout_marginTop="5px"
+                    android:layout_below="@id/imgakun"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:text="Akun" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

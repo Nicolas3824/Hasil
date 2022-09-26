@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="1dp"
+    android:layout_height="180dp">
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white"
+        android:src="@drawable/user"
+        android:id="@+id/foto_menu"
+        android:scaleType="centerCrop">
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/nama_menu"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:lines="2"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/black"
+        android:text="Restoran"></TextView>
+
+    <TextView
+        android:id="@+id/hargamenu"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="70dp"
+        android:lines="2"
+        android:textColor="@color/black"
+        android:text="Family Restoran"></TextView>
+
+    <TextView
+        android:id="@+id/deskripsimenu"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="120dp"
+        android:lines="3"
+        android:textColor="@color/black"
+        android:text="$$$"></TextView>
+
+</androidx.cardview.widget.CardView>

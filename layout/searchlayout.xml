@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="2dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="2dp"
+    android:layout_height="180dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/user"
+        android:id="@+id/fotoresto"
+        android:scaleType="centerCrop">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/namarestoran"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:lines="2"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/black"
+        android:text="Restoran"></TextView>
+
+    <TextView
+        android:id="@+id/jenisrestoran"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="70dp"
+        android:lines="2"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/dtlimgres"
+        android:text="Family Restoran"></TextView>
+
+    <TextView
+        android:id="@+id/alamatrestoran"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="120dp"
+        android:lines="3"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/dtlimgres"
+        android:text="$$$"></TextView>
+
+    <Button
+        android:id="@+id/tes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="55dp"
+        android:textColor="#000000"
+        app:backgroundTint="#E4E1E1"
+        android:text="tes"></Button>
+
+</androidx.cardview.widget.CardView>
